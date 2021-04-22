@@ -4,6 +4,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.FileWriter;
 
 public class Website {
     private URL url;//store url
@@ -30,6 +32,12 @@ public class Website {
         result = fetchStringWOSymbols(result);//Removing the HTML tags
 
         System.out.println("Contents of the web page: " + result);
+    }
+    public void loadDataToText() throws IOException{
+        FileWriter fw = new FileWriter("webData.txt", true);
+        PrintWriter data = new PrintWriter(fw);
+        data.println(results);
+        data.close();
     }
 
     private String fetchString(StringBuffer stringBuffer) {
