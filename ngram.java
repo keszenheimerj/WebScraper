@@ -9,7 +9,7 @@ public static List<String> ngrams(int n, String str) {
             ngrams.add(concat(words, i, i+n));
         return ngrams;
     }
-
+// Concat will build the new strings with desired info
     public static String concat(String[] words, int start, int end) {
         StringBuilder sb = new StringBuilder();
         for (int i = start; i < end; i++)
