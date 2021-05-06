@@ -1,8 +1,8 @@
 # WebScraper
 
-Usr inputs a Facebook URL
-The Program uses a scanner, and a bufferReader to extract the text portion of the html
-Then, it proceeds to use ngrams to fetch important information from the file
+Usr inputs a Facebook URL.
+The Program uses a scanner, and a bufferReader to extract the text portion of the html.
+Then, it proceeds to use ngrams to fetch important information from the file.
 
 Go from this type of page
 <img width="1105" alt="image" src="https://user-images.githubusercontent.com/78702929/117327586-c0d1cb00-ae60-11eb-856e-8fcfbd468a1f.png">
